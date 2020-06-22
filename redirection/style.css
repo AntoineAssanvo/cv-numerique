@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url("db.onlinewebfonts.com/c/04d799f9fc4bd0a0973b3331ff889f32?family=Schnyder+Cond+M+Light");
+
+/* le font adapté pour au differents navigateur */
+@font-face {
+
+    font-family: "Schnyder Cond M Light";
+    src: url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.eot");
+    src: url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/04d799f9fc4bd0a0973b3331ff889f32.svg#Schnyder Cond M Light") format("svg");
+}
+
+@import "node_modules/aos/src/sass/aos.scss";
+
+html {
+    scroll-behavior: smooth;
+
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    background-color: #80959E;
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Schnyder Cond M Light";
+    color: #2c1e3c;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.centre {
+    align-self: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+.btn {
+    align-self: center;
+    justify-self: center;
+    padding: 18px 40px;
+    font-size: 1vw;
+    text-align: center;
+    color: #f1f1f1;
+    background: #2c1e3c;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    align-self: center;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+
+
+.btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
